@@ -154,7 +154,7 @@ $('.submitOnclick').click(function () {
     });
 
     
-        alert("Add user complete");
+        alert("ยืนยันการยีมสำเร็จ");
     });
     
     // cart : Array
