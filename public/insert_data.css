@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+
+body{
+    font-family: 'Mitr', sans-serif;
+    background-image: url(./PIC/3385975.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+  margin-bottom: 4vh;
+}
+.from-date{
+    color: #777;
+}
+.control-label{
+    font-weight: bold;
+}
+body {
+    padding-top: 80px;
+  }
+  
+  .show-cart li {
+    display: flex;
+  }
+  .row{
+      justify-content: space-between;
+  }
+  .card {
+    margin-bottom: 10px;
+  }
+  .card-img-top {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+  }
+.card-title{
+    font-size: 1em;
+}
+  /*  */
+#page-object
+{
+  display:none;
+}
+
+
+.backbutton{
+    position: fixed;
+    z-index:1;
+    left: 2%;
+    top: 17vh;
+}
+button{
+    font-family: 'Mitr', sans-serif;
+}

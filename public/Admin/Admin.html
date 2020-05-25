@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMO-ROW</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="../PIC/LOGO.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../PIC/LOGO.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../PIC/LOGO.png">
+    <link rel="apple-touch-icon" href="../PIC/LOGO.png">
+    <meta name="apple-mobile-web-app-title" content="SMO-ROW">
+
+    <link rel="stylesheet" href="./Admin.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top d-inline-block navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"><img src="../PIC/LOGO.png" width="30" height="30"
+                class="d-inline-block align-top" alt=""> SMO-ROW [Admin]
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+            style="margin-inline: 0;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="../index.html">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="../insert_data.html">ยืมของ</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-item nav-link" href="#">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="margin-top: 57px;">
+
+    </div>
+    <table id="myTable" class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">รหัสนักศึกษา</th>
+                <th scope="col">ชื่อ</th>
+                <th scope="col">สาขา</th>
+                <th scope="col">ของที่ยืม</th>
+                <th scope="col">เบอร์</th>
+                <th scope="col">เหตุผล</th>
+                <th scope="col">ผู้มอบ</th>
+                <th scope="col">วันที่คืน</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+<script src="./Admin.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCN7Icd1yxpYnNkBNwGHg8uOxxOvCW5NsE",
+        authDomain: "fir-smorow.firebaseapp.com",
+        databaseURL: "https://fir-smorow.firebaseio.com",
+        projectId: "fir-smorow",
+        storageBucket: "fir-smorow.appspot.com",
+        messagingSenderId: "612967966206",
+        appId: "1:612967966206:web:5b03fc2a5118826d604caf",
+        measurementId: "G-2LMM8DCS5S"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+</html>

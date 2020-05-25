@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+
+body{
+    font-family: 'Mitr', sans-serif;
+    background-image: url(./PIC/3385975.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+.boxobj{
+    display: flex;
+    justify-content: space-between;
+  }
+  table{
+      font-size: 0.75em;
+  }
