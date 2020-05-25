@@ -127,36 +127,36 @@ var shoppingCart = (function () {
         return cartCopy;
     }
 
-$('.submitOnclick').click(function () {
-    var nickname = document.getElementById('nick_name').value;
-    var student_id = document.getElementById('student_id').value;
-    var end_date = document.getElementById('end_date').value;
-    var phone = document.getElementById('phone').value;
-    var branch = document.getElementById('branch').value;
-    var namesmo = document.getElementById('name_smo').value;
-    var comment = document.getElementById('comment').value;
-    var obj0name = document.getElementById('object0').name;
-    var obj0value = document.getElementById('object0').value;
+    $('.submitOnclick').click(function () {
+        var nickname = document.getElementById('nick_name').value;
+        var student_id = document.getElementById('student_id').value;
+        var end_date = document.getElementById('end_date').value;
+        var phone = document.getElementById('phone').value;
+        var branch = document.getElementById('branch').value;
+        var namesmo = document.getElementById('name_smo').value;
+        var comment = document.getElementById('comment').value;
+        var obj0name = document.getElementById('object0').name;
+        var obj0value = document.getElementById('object0').value;
 
-    
-    
-    var firebaseRef = firebase.database().ref("User");
+
+
+        var firebaseRef = firebase.database().ref("User");
         firebaseRef.push({
-            nickname:nickname,
-            student_id:student_id,
-            phone:phone,
-            end_date:end_date,
-            branch:branch,
-            name_smo:namesmo,
-            comment:comment,
-            obj0name:obj0name,
-            obj0value:obj0value
+            nickname: nickname,
+            student_id: student_id,
+            phone: phone,
+            end_date: end_date,
+            branch: branch,
+            name_smo: namesmo,
+            comment: comment,
+            obj0name: obj0name,
+            obj0value: obj0value
+        });
+
+
+        alert("ยืนยันการยืมสำเร็จ ><");
     });
 
-    
-        alert("ยืนยันการยีมสำเร็จ");
-    });
-    
     // cart : Array
     // Item : Object/Class
     // addItemToCart : Function
@@ -197,8 +197,8 @@ function displayCart() {
     for (var i in cartArray) {
         output += "<tr>"
             + "<td>" + cartArray[i].name + "</td>"
-            + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name +">-</button>"
-            + "<input type='number' class='item-count form-control' name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'id=" +"object"+ [i] +">"
+            + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+            + "<input type='number' class='item-count form-control' name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'id=" + "object" + [i] + ">"
             + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
             + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
             + "</tr>";
