@@ -150,9 +150,11 @@ $('.submitOnclick').click(function () {
             name_smo:namesmo,
             comment:comment,
             obj0name:obj0name,
-            obj0value:obj0value,
+            obj0value:obj0value
     });
-        alert("ยืมของสำเร็จ");
+
+    
+        alert("Add user complete");
     });
     
     // cart : Array

@@ -26,7 +26,6 @@
     <link rel="apple-touch-icon" sizes="114x114" href="./PIC/LOGO.png">
     <link rel="apple-touch-icon" href="./PIC/LOGO.png">
     <meta name="apple-mobile-web-app-title" content="SMO-ROW">
-
     <link rel="stylesheet" href="./insert_data.css">
 </head>
 
@@ -66,25 +65,29 @@
             <br>
             <h2>วันนี้จะยืมอะไรจากสโมสรนักศึกษา?</h2>
             <br>
-            <form>
+            <form action="/action_page.php">
+
+
                 <div class="form-group">
-                    <label>ชื่อเล่น *</label>
-                    <input id="nick_name" placeholder="กรุณากรอกชื่อเล่น" class="form-control" required autofocus type="text">
+                    <label>ชื่อเล่น</label>
+                    <input id="nick_name" placeholder="กรุณากรอกชื่อเล่น" class="form-control"
+                        required autofocus type="text">
                 </div>
                 <div class="form-group">
-                    <label>รหัสนักศึกษา *</label>
-                    <input id="student_id" placeholder="กรุณากรอกรหัสนักศึกษา" class="form-control" type="text" required>
+                    <label>รหัสนักศึกษา</label>
+                    <input id="student_id" placeholder="กรุณากรอกรหัสนักศึกษา" class="form-control" type="text"
+                        required>
                 </div>
                 <div class="form-group">
-                    <label>วันที่คืน *</label><br>
+                    <label>วันที่คืน</label><br>
                     <input id="end_date" class="from-date" type="date" required>
                 </div>
                 <div class="form-group">
-                    <label>เบอร์โทร *</label>
+                    <label>เบอร์โทร</label>
                     <input id="phone" placeholder="(099)555-1212" class="form-control" type="text" required>
                 </div>
                 <div class="form-group">
-                    <label>สาขา *</label>
+                    <label>สาขา</label>
                     <select id="branch" class="form-control selectpicker" required>
                         <option value=" ">-- กรุณาเลือกสาขาที่เรียน --</option>
                         <option value="IT">สาขาวิชาเทคโนโลยีสารสนเทศ(IT)</option>
@@ -93,16 +96,16 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>ผู้มอบของ *</label>
+                    <label>ผู้มอบของ</label>
                     <input id="name_smo" placeholder="กรุณากรอกชื่อเล่นผู้ที่ให้ยืม" class="form-control" type="text" required>
                 </div>
                 <div class="form-group">
                     <label>เหตุผลการยืม</label>
                     <textarea class="form-control" id="comment" placeholder="คำอธิบายว่ายืมเพื่ออะไร"></textarea>
                 </div>
-                <p>หมายเหตุ : เว็บอยู่ในระหว่างการพัฒนาเบื้องต้น ขณะนี้ยืมของได้ครั้งละ 1 อย่างเท่านั้น และการยืมหากคืนช้าตามวันที่กำหนด ปรับวันละ 20 บาท</p>
-                <button type="submit" class="btn btn-primary submitOnclick" onclick="">Submit</button>
-            </form>
+
+                <p>หมายเหตุ : สามารถยืมของได้ทีละ 1 อย่างเท่านั้น โดยหากคืนช้ากว่าที่กำหนดจะปรับวันละ 20 บาท</p>
+            </form><button type="submit" class="btn btn-primary submitOnclick" onclick="">Submit</button>
         </div>
     </div>
 
